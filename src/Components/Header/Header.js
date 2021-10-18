@@ -5,7 +5,7 @@ import { Button, Container, Nav, Navbar } from "react-bootstrap";
 function Header() {
     return(
         <Navbar collapseOnSelect expand="lg" className='nav-bar'>
-  <Container>
+  <Container className='padding'>
   <Navbar.Brand href="#home"> <h3>Every <span className='primary-color'>Care</span></h3> </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">

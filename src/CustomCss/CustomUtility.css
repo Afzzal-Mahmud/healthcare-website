@@ -1,0 +1,16 @@
+/* Adding all color for the UI Design */
+:root{
+    --primary-light : #1e93e4;
+    --primary-dark : #1171e0;
+    --primary : linear-gradient(to top left,var(--primary-dark),var(--primary-light));
+    --secondery : #092b46;
+    --pure : #fdfeff;
+    --font : #38393b;
+    --footer : #474760;
+}
+.secondery-color{
+    color: var(--secondery);
+}
+.secondery-background-color{
+    background: var(--secondery);
+}

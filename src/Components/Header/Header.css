@@ -5,13 +5,18 @@
     --primary : linear-gradient(to top left,var(--primary-dark),var(--primary-light));
     --pure : #fdfeff;
 }
-
+/* primary background of header */
 .nav-bar{
     background: var(--pure);
 }
+/* primary-background use all */
 .primary-background{
     background: var(--primary);
 }
 .primary-color{
     color: var(--primary-dark);
+}
+/* padding for header */
+.padding{
+    padding: 2em 0;
 }
