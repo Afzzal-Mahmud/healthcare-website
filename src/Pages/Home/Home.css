@@ -1,26 +1,40 @@
+/* make some room on hero section by padding top */
 .padding-top{
     padding-top: 5em;
 }
+/* the UI secondery color use in this utility class */
 .secondery-section-background{
     background: #f6f6f6;
 }
+.responsive-flex{
+    display: flex;
+}
 .hero-img-background{
     position: absolute;
-    width: 350px;
-    height: 600px;
-    left: -5em;
-    top: -3em;
+    width: 230px;
+    height: 184px;
+    left: -3.5em;
+    top: -2.5em;
     background: #092b46;
     z-index: -1;
 }
-/* top margin of the hero */
+/* header end section */
+.hero-end{
+    left: 0;
+    bottom: 0em;
+    width: 100%;
+}
+.hero-end > div {
+    margin-left: 2em;
+}
+/* top margin of the hero image */
 .margin-top{
-    margin-top: 4.2em;
+    margin-top: 4em;
     z-index: 1;
 }
 /* for all h1,-h6 teg */
 .font-big{
-    font-size: 4.5em;
+    font-size: 4em;
     color: #092b46;
     line-height: 5rem;
 }
@@ -31,4 +45,45 @@
 }
 .btn-padding{
     padding: 1rem 2rem;
+}
+
+/* meadia quariey */
+/* font big class is for the hero text size */
+@media screen and (max-width: 1199px) {
+    .font-big{
+        font-size: 3em;
+        line-height: 3.5rem;
+    }
+}
+/* responsive flex class is for revarce the hero section hero-info is on the top and img is on the bottom */
+@media screen and (max-width: 994px) {
+    .responsive-flex{
+        flex-direction: column;
+    }
+    .responsive-img{
+        margin: -3em 0 0 21em;
+    }
+}
+@media screen and (max-width: 767px) {
+    .padding-top{
+        padding-top: 3em;
+    }
+    .responsive-img{
+        display: none;
+    }
+    .responsive-hero-section{
+        padding-bottom: 10em;
+    }
+    .font-big{
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 450px) {
+    .hide-mobile{
+        display: none;
+    }
+    .font-big{
+        font-size: 1.8em;
+        line-height: 1em;
+    }
 }

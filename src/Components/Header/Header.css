@@ -20,3 +20,9 @@
 .padding{
     padding: 2em 0;
 }
+/* resize the header padding on this brackpoint */
+@media screen and (max-width: 767px) {
+    .padding{
+        padding:1em 0;
+    }
+}
