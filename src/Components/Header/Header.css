@@ -1,0 +1,17 @@
+/* root style for header */
+:root {
+    --primary-light : #1e93e4;
+    --primary-dark : #1171e0;
+    --primary : linear-gradient(to top left,var(--primary-dark),var(--primary-light));
+    --pure : #fdfeff;
+}
+
+.nav-bar{
+    background: var(--pure);
+}
+.primary-background{
+    background: var(--primary);
+}
+.primary-color{
+    color: var(--primary-dark);
+}
