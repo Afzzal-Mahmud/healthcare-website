@@ -4,12 +4,15 @@ import initializeAuthentication from "../Firebase/firebase.init";
 import useGoogleLogIn from "../Mathods/useGoogleLogIn";
 import useError from "./useError";
 import useUser from "./useUser";
+import useServices from './useServices';
 
 initializeAuthentication()
 function useFirebase() {
     /* added user from custom hook */
     const {user,setUser} = useUser();
 
+    /* use services custom hook */
+    const {services,setServices} = useServices()
     /* catch the error */
     const {err,setErr} = useError()
 
@@ -42,7 +45,9 @@ function useFirebase() {
         signInUsignGoogle,
         logOut,
         err,
-        setErr
+        setErr,
+        services,
+        setServices
     }
 }
 export default useFirebase;

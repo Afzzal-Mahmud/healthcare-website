@@ -1,8 +1,12 @@
 import React, {useEffect, useState} from "react";
 import { Container, Row } from "react-bootstrap";
+import useAuth from "../../../Hooks/useAuth";
 import ServicesCard from "../ServicesCard/ServicesCard";
 function ServicesMain() {
-    const [services,setServices] = useState([])
+    
+    /* usign context api and setThe services on that for anywhere use */
+
+    const {services,setServices} = useAuth()
     useEffect(() =>{
         fetch('./services.json')
         .then(Response => Response.json())
