@@ -8,6 +8,7 @@ import DoctorsMain from './Pages/Doctors/DoctorsMain';
 import AuthProvider from './Context/AuthProvider';
 import ServicesMain from './Pages/Services/ServicesMain/ServicesMain';
 import ServicesDetail from './Pages/Services/ServicesDetail/ServicesDetail';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -21,7 +22,10 @@ function App() {
       <Route path='/login' component={LogInForm}></Route>
       <Route path='/doctors' component={DoctorsMain}></Route>
       <Route exact path='/services' component={ServicesMain}></Route>
-      <Route exact path='/servicesdetail/:id' component={ServicesDetail}></Route>
+      {/* detail page is private to see */}
+      <PrivateRoute exact path='/servicesdetail/:id'>
+        <ServicesDetail></ServicesDetail>
+      </PrivateRoute>
     </Switch>
     </Router>
     </AuthProvider>
