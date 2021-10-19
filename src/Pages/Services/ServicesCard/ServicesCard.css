@@ -1,0 +1,8 @@
+/* some css for servicesCard to center align the image */
+.img-container{
+    text-align: center;
+}
+.img-container img{
+    width: 80px;
+    max-width: 100%;
+}

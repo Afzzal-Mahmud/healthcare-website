@@ -1,0 +1,50 @@
+[
+    {
+        "id": "A2K3",
+        "service": "Health Care",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS45mDOkx3frZavIGshik-EwYYheuCIZ3XMAQ&usqp=CAU",
+        "description": "Primary care should be the first place patients go for medical care. Patients may get primary care in a doctor’s office or in a community health center. One focus of primary care is to prevent disease through regular physical exams and health screening. Another focus is to care for a patient’s general health by diagnosing and treating a wide variety of conditions. If a patient has a health problem that requires special knowledge or skill, a primary care doctor will refer the patient to a specialist. Primary care doctors follow a patient’s care while they see a specialist."
+    },
+    {
+        "id": "A353",
+        "service": "Specialty Care",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRibOUztcGaNCmtcGpvIfTZ6BwTz79knRrCpZkSvExNgBGhv0D4ddWG-_DqBNCfc2B3RVY&usqp=CAU",
+        "description": "Specialty care is care for a patient who has a health problem or illness that requires special knowledge in one medical area. Specialty care can be ongoing or preventative care around a specific system of the body. Specialists have knowledge or skill related to a specific disease or organ system of the body. Specialists must complete special training, be certified or licensed in their area of specialty. They can be doctors, nurses or other healthcare team members. Examples of specialists include: cardiologists, gynecologists, physical therapists or social workers."
+    },
+    {
+        "id": "A453",
+        "service": "Emergency Care",
+        "image": "https://cdn4.iconfinder.com/data/icons/transportation-135/64/ambulance_emergency_transportation_medical_transport-512.png",
+        "description": "Emergency care involves diagnosing and treating life-threatening illnesses or injuries that need immediate attention. Emergency care may take place in ambulances or other transportation vehicles, hospital emergency rooms or intensive care units. Examples of emergencies are chest pain, difficulty breathing, heart attack, serious injury, bleeding that will not stop or mental crisis."
+    },
+    {
+        "id": "A553",
+        "service": "Urgent Care",
+        "image": "https://uwosh.edu/studenthealth/wp-content/uploads/sites/26/2018/01/Urgent-care-icon-color.png",
+        "description": "Urgent care is not life threatening, but is care for an illness or injury that needs immediate attention. Examples of urgent care are minor cuts or burns, stomachaches, sprains and ear or throat infections."
+    },
+    {
+        "id": "A630",
+        "service": "Long Tarm Care",
+        "image": "http://www.pekdadvocacy.com/wp-content/uploads/2010/10/eldercare5.jpg",
+        "description": "When someone is not able to perform daily living activities due to an injury, disability, chronic condition or dementia. Long-term care is a combination of medical, nursing and social care. It can be provided in a person’s home, long-term care facility or assisted living facility."
+    },
+    {
+        "id": "A673",
+        "service": "Hospice Care",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT-OZx2KR1pRoSdDIFvgUDceQylWRAcb_aJAbSGRE0nGrtsYPiHkAcLfeJGHe3vX8KVVg&usqp=CAU",
+        "description": "Hospice care focuses on “palliative” care to ease symptoms rather than cure a disease toward the end of life. The philosophy of hospice care is give physical, emotional, spiritual or social to support a patient and their family. Hospice care may be provided in a person’s home or in a hospice care facility."
+    },
+    {
+        "id": "C553",
+        "service": "Mental Healthcare",
+        "image": "https://icon-library.com/images/mental-icon/mental-icon-2.jpg",
+        "description": "Mental healthcare can help when patients need help with a mental illness or emotional crisis. Mental health treatment may include medication, psychotherapy (“talk therapy”) or both. Mental health professionals include psychiatrists, counselors or psychologists."
+    },
+    {
+        "id": "A6D3",
+        "service": "Commitment",
+        "image": "https://image.flaticon.com/icons/png/512/940/940921.png",
+        "description": "I know you are grate person you wants to be healthy . We are commited with you for your good health .So let's start your journy"
+    }
+]

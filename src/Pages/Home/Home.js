@@ -3,9 +3,11 @@ import './Home.css';
 import '../../CustomCss/CustomUtility.css'
 import { Button, Container } from "react-bootstrap";
 import heroDoctor from '../../Image/hero-doctor-image.jpg';
+import ServicesMain from "../Services/ServicesMain/ServicesMain";
 
 function Home() {
     return(
+        <>
         <div className='secondery-section-background                                position-relative
                    responsive-hero-section'>
         <Container
@@ -53,6 +55,9 @@ function Home() {
             </div>
         </div>
         </div>
+        {/* The services secTion */}
+        <ServicesMain></ServicesMain>
+        </>
     )
 }
 export default Home;
