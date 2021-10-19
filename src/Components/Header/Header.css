@@ -18,7 +18,7 @@
 }
 /* padding for header */
 .padding{
-    padding: 2em 0;
+    padding: 1em 0;
 }
 /* resize the header padding on this brackpoint */
 @media screen and (max-width: 767px) {

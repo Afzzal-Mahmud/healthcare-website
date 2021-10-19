@@ -8,7 +8,7 @@ import ServicesMain from "../Services/ServicesMain/ServicesMain";
 function Home() {
     return(
         <>
-        <div className='secondery-section-background                                position-relative
+        <div id='home' className='secondery-section-background                                position-relative
                    responsive-hero-section'>
         <Container
         className='responsive-flex 

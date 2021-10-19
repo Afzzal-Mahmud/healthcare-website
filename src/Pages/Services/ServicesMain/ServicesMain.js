@@ -13,7 +13,9 @@ function ServicesMain() {
     },[])
     /* main services section on under the Home */
     return(
-        <div className='secondery-section-background'>
+        <div className=
+        'secondery-section-background' 
+        id='services'>
             <Container>
                 <h2 className='text-center pt-4'>Our Services</h2>
             <Row xs={12} md={4}>
