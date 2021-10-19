@@ -5,11 +5,12 @@ import Home from './Pages/Home/Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LogInForm from './Components/LogInForm/LogInForm';
 import DoctorsMain from './Pages/Doctors/DoctorsMain';
+import AuthProvider from './Context/AuthProvider';
 
 
 function App() {
   return (
-    <>
+    <AuthProvider>
     <Router>
     <Header></Header>
     <Switch>
@@ -19,7 +20,7 @@ function App() {
       <Route path='/doctors' component={DoctorsMain}></Route>
     </Switch>
     </Router>
-    </>
+    </AuthProvider>
   );
 }
 

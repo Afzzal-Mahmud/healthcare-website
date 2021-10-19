@@ -1,12 +1,12 @@
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import useFirebase from '../../Hooks/useFirebase'
 import { Button, Container, Form } from "react-bootstrap";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import useAuth from "../../Hooks/useAuth";
 
 function LogInForm() {
     /* uploding useFirebase Hook */
-    const {user,setUser,err,setErr} = useFirebase()
+    const {user,setUser,err,setErr,signInUsignGoogle} = useAuth()
     /* usign react hook form */
     const { 
         register, 
@@ -60,10 +60,10 @@ function LogInForm() {
     return (
         <>
             <Container>
-                <h2>Please
+                <h3 className='text-center mb-4'>Please
                 {isLogIn ? " Log In "
-                : " Sign Up With Your Email and Password"
-                }</h2>
+                : " Sign Up With Email and Password"
+                }</h3>
                 <Form onSubmit = {handleSubmit(takeValueAndLogIn)}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
@@ -98,6 +98,10 @@ function LogInForm() {
                     </Form.Group>
                     <Button variant="primary" type="submit">
                         { isLogIn ?"Log In" : "Sign Up" }
+                    </Button>
+                    {/* google sign in button */}
+                    <Button onClick={signInUsignGoogle} variant="primary" className='ms-4' type="submit">
+                        Google Sign In
                     </Button>
                 </Form>
             </Container>
