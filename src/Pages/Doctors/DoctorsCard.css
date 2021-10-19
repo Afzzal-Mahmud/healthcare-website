@@ -1,0 +1,19 @@
+/* this style for sizing the image */
+.doctor-card-image img {
+    height: 215px;
+    max-width: 100%;
+}
+/* card padding */
+.card-padding{
+    padding: 2em 1em 4em 1em;
+}
+/* card margin */
+.card-margin{
+    margin: 4em;
+}
+/* position the button */
+.btn-position{
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
