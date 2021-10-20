@@ -16,7 +16,7 @@ function Header() {
       <Nav.Link as={Link} to="/home">Home</Nav.Link>
       <Nav.Link as={Link} to="/services">Services</Nav.Link>
       <Nav.Link as={Link} to="/doctors">Doctors</Nav.Link>
-      <Nav.Link as={Link} to="/faq">F.A.Q</Nav.Link>
+      <Nav.Link as={Link} to="/whychooseus">Why Choose Us</Nav.Link>
 
       {/* showing the user name on header if he is log In */}
       {user.email && <Nav.Link>{user?.displayName}</Nav.Link>}

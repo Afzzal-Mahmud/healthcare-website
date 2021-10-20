@@ -1,0 +1,23 @@
+.chose-us-title{
+    font-weight: bold;
+    color: #27475f;
+    font-size: 2.5em !important;
+    text-align: center;
+    padding:1em 0 2em 0;
+}
+.item-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px , 1fr));
+}
+.item-body{
+    margin: 1em;
+    transition: 0.3s ease;
+    transform: scale(0.8);
+}
+.item-body:hover{
+    transform: scale(0.9);
+}
+.item-image{
+    font-size: 2em;
+    color: #19589f;
+}

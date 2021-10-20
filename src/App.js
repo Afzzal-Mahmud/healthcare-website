@@ -9,6 +9,8 @@ import AuthProvider from './Context/AuthProvider';
 import ServicesMain from './Pages/Services/ServicesMain/ServicesMain';
 import ServicesDetail from './Pages/Services/ServicesDetail/ServicesDetail';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import WhyChooseUs from './Pages/WhyChooseUs/WhyChooseUs';
+import PageNotFound from './Pages/PageNotFound/PageNotFound';
 
 
 function App() {
@@ -22,10 +24,12 @@ function App() {
       <Route path='/login' component={LogInForm}></Route>
       <Route path='/doctors' component={DoctorsMain}></Route>
       <Route exact path='/services' component={ServicesMain}></Route>
+      <Route exact path='/whychooseus' component={WhyChooseUs}></Route>
       {/* detail page is private to see */}
       <PrivateRoute exact path='/servicesdetail/:id'>
         <ServicesDetail></ServicesDetail>
       </PrivateRoute>
+      <Route path='*' component={PageNotFound}></Route>
     </Switch>
     </Router>
     </AuthProvider>
