@@ -21,9 +21,11 @@ function DoctorsCard({ doctorObject }) {
           </Card.Text>
           {/* btn on click it will be private route */}
           {/* <Link to='/info'> */}
+          {/* pop-out-btn class is come from Home.css  */}
           <Button variant="primary" 
                   className='.primary-services-btn 
-                              btn-position'
+                              btn-position
+                              pop-out-btn'
                   >Appointment</Button>
           {/* </Link> */}
         </Card.Body>

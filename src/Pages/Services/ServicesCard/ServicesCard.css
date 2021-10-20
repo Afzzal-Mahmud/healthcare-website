@@ -6,3 +6,11 @@
     width: 80px;
     max-width: 100%;
 }
+/* for card interaction on services section */
+.card-pop-up{
+    transition: 0.3s ease;
+    scale: 0.95;
+}
+.card-pop-up:hover{
+    scale: 1;
+}

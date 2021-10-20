@@ -1,7 +1,13 @@
+/* use for doctors card */
 /* this style for sizing the image */
 .doctor-card-image img {
     height: 215px;
     max-width: 100%;
+    transition: 0.3s ease;
+    scale: 0.9;
+}
+.doctor-card-image img:hover{
+    scale: 1;
 }
 /* card padding */
 .card-padding{

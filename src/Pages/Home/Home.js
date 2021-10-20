@@ -27,6 +27,7 @@ function Home() {
                 <Button 
                 className='background-color
                            btn-padding
+                           pop-out-btn
                            fw-bold'>
                 Appointment</Button>
                 </Link>

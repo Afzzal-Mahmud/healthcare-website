@@ -46,6 +46,15 @@
 .btn-padding{
     padding: 1rem 2rem;
 }
+/* I use this button for all other components */
+.pop-out-btn{
+    transition: transform 250ms ease-in-out,
+                opacity 250ms linear;
+}
+.pop-out-btn:hover{
+    transform: scale(1.1);
+    opacity: .9;
+}
 
 /* meadia quariey */
 /* font big class is for the hero text size */

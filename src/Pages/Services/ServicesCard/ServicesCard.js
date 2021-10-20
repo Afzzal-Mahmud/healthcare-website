@@ -8,7 +8,8 @@ function ServicesCard({serviceObject}) {
     const {id,service,description,image} = serviceObject;
     const littleDescription = description.slice(0, 50)
     return(
-        <Col className='mt-4'>
+      /* card-pop-up use for scale up the services card*/
+        <Col className='mt-4 card-pop-up'>
             <Card className="text-center my-4 p-4 h-100">
             <div className='img-container'>
                     <img src={image} alt="" />
@@ -22,7 +23,10 @@ function ServicesCard({serviceObject}) {
     {/* on button click load each single data of the services on services detail page */}
     <Card.Footer>
       <Link to={`/servicesdetail/${id}`}>
-      <Button className='primary-services-btn'>See Details</Button>
+        {/* pop-out-btn class is come from Home.css  */}
+      <Button className='
+              primary-services-btn
+              pop-out-btn'>See Details</Button>
       </Link>
     </Card.Footer>
   </Card>
