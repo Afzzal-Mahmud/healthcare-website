@@ -24,7 +24,10 @@ function App() {
       <Route path='/home' component={Home}></Route>
       <Route path='/login' component={LogInForm}></Route>
       <Route exact path='/services' component={ServicesMain}></Route>
-      <Route exact path='/whychooseus' component={WhyChooseUs}></Route>
+      {/* add why choose us components onPrivate Route */}
+      <PrivateRoute exact path='/whychooseus'>
+        <WhyChooseUs></WhyChooseUs>
+      </PrivateRoute>
       {/* detail page is private to see */}
       <PrivateRoute exact path='/servicesdetail/:id'>
         <ServicesDetail></ServicesDetail>

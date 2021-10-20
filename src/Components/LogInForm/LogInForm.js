@@ -113,7 +113,7 @@ function LogInForm() {
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
                         {/* if user do not have any account but trying to log in throw this erro */}
                 {
-                    err && <small className='text-danger'>You don't have any account yet please create account</small>
+                    err && <small className='text-danger'>Make sure you have an account ? or your password is incorrect . please create account</small>
                 }
                         <Form.Check onClick={haveAccount} type="checkbox" label="already have an account ?" />
                     </Form.Group>
