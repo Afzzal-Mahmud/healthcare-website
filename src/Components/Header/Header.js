@@ -9,7 +9,7 @@ function Header() {
     return(
         <Navbar collapseOnSelect expand="lg" className='nav-bar sticky-top'>
   <Container className='padding'>
-  <Navbar.Brand href="#home"> <h3>Every <span className='primary-color'>Care</span></h3> </Navbar.Brand>
+  <Navbar.Brand href="#home"> <h3 className='fw-bold'>Madico <span className='primary-color'>Care</span></h3> </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ms-auto fw-bold">

@@ -11,6 +11,7 @@ import ServicesDetail from './Pages/Services/ServicesDetail/ServicesDetail';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import WhyChooseUs from './Pages/WhyChooseUs/WhyChooseUs';
 import PageNotFound from './Pages/PageNotFound/PageNotFound';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -29,8 +30,10 @@ function App() {
       <PrivateRoute exact path='/servicesdetail/:id'>
         <ServicesDetail></ServicesDetail>
       </PrivateRoute>
+
       <Route path='*' component={PageNotFound}></Route>
     </Switch>
+      <Footer></Footer>
     </Router>
     </AuthProvider>
   );
