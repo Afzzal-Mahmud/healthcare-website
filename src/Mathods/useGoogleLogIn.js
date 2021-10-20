@@ -1,21 +1,17 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import useUser from "../Hooks/useUser";
+// import useLoading from "../Hooks/useLoading";
 
 function useGoogleLogIn() {
-
+    // const { isLoading, setIsLoading } = useLoading()
     /* use custom user hook for store google signIn data */
-    const {setUser} = useUser()
     
     const googleProvider = new GoogleAuthProvider()
     function signInUsignGoogle() {
-
+        // setIsLoading(true)
         const auth = getAuth();
         
-        signInWithPopup(auth,googleProvider)
-        .then(result => {
-            setUser(result.user)
-            console.log(result.user)
-        })
+       return signInWithPopup(auth,googleProvider)
+
     }
     return {signInUsignGoogle}
 }

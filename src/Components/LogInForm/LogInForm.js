@@ -3,10 +3,29 @@ import { Button, Container, Form } from "react-bootstrap";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import useAuth from "../../Hooks/useAuth";
+import { useHistory, useLocation } from "react-router-dom";
 
 function LogInForm() {
+    const location = useLocation()
+    const history = useHistory()
+    const redirectUrl = location.state?.from || '/home'
     /* uploding useFirebase Hook */
-    const {user,setUser,err,setErr,signInUsignGoogle} = useAuth()
+    const {user,setUser,err,setErr,signInUsignGoogle,setIsLoading,isLoading} = useAuth()
+    /* redirecting the url to where user trying to go  */
+    const hendleGoogleSignIn = ()=>{
+        signInUsignGoogle()
+        .then(result => {
+            setUser(result.user)
+            history.push(redirectUrl)
+            // console.log(result.user)
+            // console.log(setIsLoading)
+        })
+        /* need to word after assignment */
+        // .finally(()=>{
+        //     // setIsLoading(false)
+        //     console.log('finally on the state',isLoading)
+        // })
+    }
     /* usign react hook form */
     const { 
         register, 
@@ -100,7 +119,7 @@ function LogInForm() {
                         { isLogIn ?"Log In" : "Sign Up" }
                     </Button>
                     {/* google sign in button */}
-                    <Button onClick={signInUsignGoogle} variant="primary" className='ms-4' type="submit">
+                    <Button onClick={hendleGoogleSignIn} variant="primary" className='ms-4' type="submit">
                         Google Sign In
                     </Button>
                 </Form>
