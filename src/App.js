@@ -23,12 +23,14 @@ function App() {
       <Route exact path='/' component={Home}></Route>
       <Route path='/home' component={Home}></Route>
       <Route path='/login' component={LogInForm}></Route>
-      <Route path='/doctors' component={DoctorsMain}></Route>
       <Route exact path='/services' component={ServicesMain}></Route>
       <Route exact path='/whychooseus' component={WhyChooseUs}></Route>
       {/* detail page is private to see */}
       <PrivateRoute exact path='/servicesdetail/:id'>
         <ServicesDetail></ServicesDetail>
+      </PrivateRoute>
+      <PrivateRoute exact path='/doctors'>
+        <DoctorsMain></DoctorsMain>
       </PrivateRoute>
 
       <Route path='*' component={PageNotFound}></Route>

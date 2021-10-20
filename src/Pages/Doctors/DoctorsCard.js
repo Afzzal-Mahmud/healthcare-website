@@ -20,12 +20,12 @@ function DoctorsCard({ doctorObject }) {
             {aboutDoctor}
           </Card.Text>
           {/* btn on click it will be private route */}
-          <Link to='/info'>
+          {/* <Link to='/info'> */}
           <Button variant="primary" 
                   className='.primary-services-btn 
                               btn-position'
                   >Appointment</Button>
-          </Link>
+          {/* </Link> */}
         </Card.Body>
       </Card>
     </Col>

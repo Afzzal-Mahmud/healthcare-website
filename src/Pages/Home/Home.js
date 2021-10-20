@@ -4,6 +4,7 @@ import '../../CustomCss/CustomUtility.css'
 import { Button, Container } from "react-bootstrap";
 import heroDoctor from '../../Image/hero-doctor-image.jpg';
 import ServicesMain from "../Services/ServicesMain/ServicesMain";
+import { Link } from "react-router-dom";
 
 function Home() {
     return(
@@ -22,11 +23,13 @@ function Home() {
                 <p className='font-p py-4'>At health grate, we take guesswork out of finding <br className='hide-mobile'/> the right doctors and core for you and your family</p>
 
                 {/* hero btn */}
+                <Link to='/doctors'>
                 <Button 
                 className='background-color
                            btn-padding
                            fw-bold'>
                 Appointment</Button>
+                </Link>
                 </div>
             <div className='margin-top 
                             position-relative 

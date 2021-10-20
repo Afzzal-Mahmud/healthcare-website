@@ -8,7 +8,7 @@ import { useHistory, useLocation } from "react-router-dom";
 function LogInForm() {
     const location = useLocation()
     const history = useHistory()
-    const redirectUrl = location.state?.from || '/home'
+    const redirectUrl = location?.state?.from || '/home'
     /* uploding useFirebase Hook */
     const {user,setUser,err,setErr,signInUsignGoogle,setIsLoading,isLoading} = useAuth()
     /* redirecting the url to where user trying to go  */
@@ -43,6 +43,7 @@ function LogInForm() {
         createUserWithEmailAndPassword(auth,email,password)
         .then(result => {
             setUser(result.user)
+            history.push(redirectUrl)
             console.log(result.user)
         })  
        }
@@ -56,6 +57,7 @@ function LogInForm() {
         .then(result => {
             setUser(result.user)
             console.log(result.user)
+            history.push(redirectUrl)
         }).catch(error => {
             setErr(error.message)
         })  
